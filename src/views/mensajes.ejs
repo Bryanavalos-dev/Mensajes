@@ -1,0 +1,25 @@
+<%- include ('partials/_header') %>
+
+
+    <% if(data){%>
+        <%  for(var i=0; i < data.length; i++){ %>
+            <div class="container">
+                <div class="row">
+                    <div class="card text-center  mb-3 mt-3 col-xl " style="max-width: 20rem; background-color: pink; color: black; background-size: cover; ">
+                        <div class="card-header">
+                            De:
+                            <%=data[i].nombre%>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">
+                                <%=data[i].mensaje%>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <%}%>
+                <%}%>
+                    <%- include ('partials/_footer') %>
